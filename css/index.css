@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background: linear-gradient(55deg, var(--baby-blue) 0%, var(--baby-periwinkle) 60%, var(--baby-pink) 85%);
+    background: linear-gradient(-35deg, var(--baby-blue) 0%, var(--baby-periwinkle) 68%, var(--baby-pink) 85%);
     background-size: cover;
     background-position: 75% 50%;
 }

@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: linear-gradient(90deg, var(--baby-pink) 0%, var(--baby-periwinkle) 38%, var(--baby-blue) 85%);
+    background: linear-gradient(-35deg, var(--light-gray) 20%, var(--baby-periwinkle) 38%, var(--lavender) 85%);
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
