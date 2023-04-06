@@ -1,11 +1,11 @@
 :root {
-    --baby-pink: rgba(248, 226, 244, 0.843);
-    --baby-periwinkle: rgba(227, 205, 240, 0.769);
-    --baby-blue: rgba(190, 230, 248, 0.824);
+    /* --baby-pink: rgba(248, 226, 244, 0.843); */
+    /* --baby-periwinkle: rgba(227, 205, 240, 0.769);
+    --baby-blue: rgba(190, 230, 248, 0.824); */
     --lightest-gray: rgba(245, 245, 245,1);
-    --light-gray: rgba(190, 190, 190,1);
+    --light-gray: rgba(190, 190, 190,1); 
     --medium-gray: rgba(133, 133, 133,1);
-    --dark-gray: rgba(65, 65, 65,1);
+    --dark-gray: rgba(65, 65, 65,1); 
     --lavender: rgba(150, 123,182,1)
     --lavender-gray: rgba(223,215,233,1)
 }
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: linear-gradient(-35deg, var(--light-gray) 20%, var(--baby-periwinkle) 38%, var(--lavender) 85%);
+    /* background: linear-gradient(-35deg, var(--light-gray) 20%, var(--baby-periwinkle) 38%, var(--lavender) 85%); */
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -73,7 +73,7 @@ a:visited {
     z-index: 3;
 }
 
-.vickie-logo {
+.pamela-logo {
     width: 100%;
     padding: 10px 0;
     object-fit: cover;
@@ -101,6 +101,7 @@ a:visited {
     background-color: rgb(255, 255, 255);
     opacity: 0.95;
     transition: opacity 0.5s linear;
+    letter-spacing: 1px;
 }
 
 .nav-item {
@@ -154,7 +155,7 @@ a:visited {
         top: 3px;
         left: 20px;
     }
-    .vickie-logo {
+    .pamela-logo {
         padding-top: 15px;
     }
     .right-nav-container {
@@ -186,7 +187,7 @@ a:visited {
         top: 0;
         left: 30px;
     }
-    .vickie-logo {
+    .pamela-logo {
         padding: 10px 0;
     }
     .right-nav-container {

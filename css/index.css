@@ -9,7 +9,8 @@ body {
     display: flex;
     justify-content: left;
     align-items: center;
-    background: linear-gradient(-35deg, var(--baby-blue) 0%, var(--baby-periwinkle) 68%, var(--baby-pink) 85%);
+    background: radial-gradient(circle at 0.3% 1.3%, rgb(235, 217, 221) 0%, rgb(216, 174, 211) 45.1%, rgb(145, 130, 196) 100.2%);
+    /* background: linear-gradient(-35deg, var(--baby-blue) 0%, var(--baby-periwinkle) 68%, var(--baby-pink) 85%); */
     background-size: cover;
     background-position: 75% 50%;
 }
@@ -20,7 +21,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(19, 19, 19, 0.21);
+    /* background-color: rgba(19, 19, 19, 0.21); */
     content: "";
 }
 
@@ -318,7 +319,8 @@ body.portfolio-body {
 .main-body.main-skills {
     margin: 0;
     position: relative;
-    background: linear-gradient(-35deg, var(--baby-pink) 0%, var(--baby-periwinkle) 38%, var(--baby-blue) 85%);
+    background: radial-gradient(circle at 0.3% 1.3%, rgb(235, 217, 221) 0%, rgb(216, 174, 211) 45.1%, rgb(145, 130, 196) 100.2%);
+    /* background: linear-gradient(-35deg, var(--baby-pink) 0%, var(--baby-periwinkle) 38%, var(--baby-blue) 85%); */
 }
 
 .main-body.main-skills:before {
@@ -517,7 +519,7 @@ body.portfolio-body {
     margin-bottom: 25px;
 }
 
-.vv-bio-pic {
+.bio-pic {
     width: 75%;
     margin: 0 auto;
     border-radius: 50px;
@@ -534,7 +536,7 @@ body.portfolio-body {
     text-decoration: underline;
 }
 
-.vv-bio-signature {
+.bio-signature {
     width: 45%;
 }
 
@@ -554,7 +556,7 @@ body.portfolio-body {
     .bio-title br {
         display: none;
     }
-    .vv-bio-pic {
+    .bio-pic {
         width: 100%;
         height: 40%;
         grid-row-start: 1;
@@ -572,7 +574,7 @@ body.portfolio-body {
 }
 
 @media only screen and (min-width: 960px) {
-    .vv-bio-pic {
+    .bio-pic {
         height: 65%;
         object-position: top;
     }
@@ -593,7 +595,7 @@ body.portfolio-body {
     .bio-title br {
         display: none;
     }
-    .vv-bio-pic {
+    .bio-pic {
         height: 85%;
     }
     .bio-text {
@@ -608,7 +610,8 @@ body.portfolio-body {
 
 /* CONTACT SECTION */
 .main-body.main-body-contact {
-    background: linear-gradient(-35deg, var(--baby-blue) 0%, var(--baby-periwinkle) 38%, var(--baby-pink) 85%);
+    background: radial-gradient(circle at 0.3% 1.3%, rgb(235, 217, 221) 0%, rgb(216, 174, 211) 45.1%, rgb(145, 130, 196) 100.2%);
+    /* background: linear-gradient(-35deg, var(--baby-blue) 0%, var(--baby-periwinkle) 38%, var(--baby-pink) 85%); */
     position: relative;
 }
 
