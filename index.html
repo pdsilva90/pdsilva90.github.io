@@ -19,6 +19,7 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
         <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
         </script>
@@ -65,8 +66,8 @@
 
         <section class="hero" id="hero">
             <div class="hero-text-container">
-                <h1 class="underline hero-title">Hey there, I'm Pamela!</h1>                
-                <!-- <span class="hero-subtitle type clip step" style="--n:85;"></span> -->
+                <h1 class="underline hero-title">Hey there, I'm Pamela!</h1>
+                <lottie-player id="firstLottie" src="https://assets1.lottiefiles.com/packages/lf20_udijzyzg.json" style="width:400px; height: 400px;"></lottie-player>
             </div>
         </section>
 
@@ -75,8 +76,8 @@
             <h1 class="page-title">Portfolio</h1>
 
             <section class="global-grid port-grid">
-                <a class="proj-pic-a" href="https://majestic-monstera-9ff3c3.netlify.app/" target="_blank">
-                    <img class="proj-pic proj-pic-1" src="/Users/pamelasilva/code/portfolio/images/myneighborhood-home.jpg" alt="MyNeighborhood">
+                <a class="proj-pic-a" href="" target="_blank">
+                    <img class="proj-pic proj-pic-1" src="/images/myneighborhood-home.jpg" alt="MyNeighborhood">
                 </a>
                 <div class="proj-text-container coming-soon-project">
                     <h3 class="proj-featured">Featured Project</h3>
@@ -94,6 +95,21 @@
                 </div>
             </section>
             
+            <section class="global-grid port-grid">
+                <a class="proj-pic-a" href="" target="_blank">
+                    <img class="proj-pic proj-pic-1" src="/images/theMintBoutiqueHome.png" alt="TheMintBoutique">
+                </a>
+                <div class="proj-text-container">
+                    <h3 class="proj-featured">Featured Project</h3>
+                    <h2 class ="proj-title">The Mint Boutique</h2>
+                    <p class="proj-caption">A fully responsive e-commerce app giving the user access to full CRUD functionality.</p>
+                    <p class="proj-stack"> Express | Passport | Google OAuth | NodeJS | JavaScript | HTML | CSS </p>
+                    <div class="proj-button-container">
+                        <a class="proj-button" href="" target="_blank">View</a>
+                        <a class="proj-button" href="https://github.com/pdsilva90/pbueno-ecom" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </section>
               
         </section>
 
@@ -142,7 +158,7 @@
                                     <p class="tool-text">Sass</p>
                                 </li>
                             </ul>                
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
 
                         <article class="skill-container skill-card-back">
@@ -156,7 +172,7 @@
                                 <li class="skill-item tech-item">RESTful APIs</li>
                                 <li class="skill-item tech-item">Responsive Mobile-first Design</li>
                             </ul>
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
                     </div>
                 </div>
@@ -179,7 +195,7 @@
                                     <p class="tool-text">Figma</p>
                                 </li>
                             </ul>
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
                         <article class="skill-container skill-card-back">
                             <h2 class="skill-title">Software Competencies</h2>
@@ -191,7 +207,7 @@
                                 <!-- <li class="skill-item tech-item">Adobe InDesign</li> -->
                                 <!-- <li class="skill-item tech-item">Adobe Illustrator</li> -->
                             </ul>
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
                     </div>
                 </div>
@@ -207,7 +223,7 @@
                                 <li class="skill-item tech-item">Time management</li>
                                 <li class="skill-item tech-item">Detail oriented</li>
                             </ul>
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
                         <article class="skill-container skill-card-back">
                             <h2 class="skill-title">Soft Skills</h2>
@@ -218,7 +234,7 @@
                                 <li class="skill-item tech-item">Time management</li>
                                 <li class="skill-item tech-item">Detail oriented</li>
                             </ul>
-                            <i class="fas fa-long-arrow-alt-right card-arrow"></i>
+                            <!-- <i class="fas fa-long-arrow-alt-right card-arrow"></i> -->
                         </article>
                     </div>
                 </div>               
@@ -322,5 +338,18 @@
                 return false;
             });
          </script>
+         <script>
+            LottieInteractivity.create({
+              mode: 'scroll',
+              player: '#firstLottie',
+              actions: [
+                  {
+                    visibility: [0,1],
+                    type: 'seek',
+                    frames: [0, 139],
+                  },
+                ],
+            });
+            </script>
     </body>
 </html>
