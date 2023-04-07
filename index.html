@@ -19,6 +19,16 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/index.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("RXaVzIhNzvRjeriMJ"); 
+        })();
+        </script>
+
+        
 
     </head>
 
@@ -64,23 +74,23 @@
         <section class="main-body main-portfolio" id="portfolio">
             <h1 class="page-title">Portfolio</h1>
 
-            <section class="global-grid port-grid coming-soon-grid-item">
-                <a class="proj-pic-a" href="" target="_blank">
-                    <img class="proj-pic proj-pic-1" src="photo/coming-soon-purple-wireframe-devices-mockup.png" alt="coming soon">
+            <section class="global-grid port-grid">
+                <a class="proj-pic-a" href="https://majestic-monstera-9ff3c3.netlify.app/" target="_blank">
+                    <img class="proj-pic proj-pic-1" src="/Users/pamelasilva/code/portfolio/images/myneighborhood-home.jpg" alt="MyNeighborhood">
                 </a>
                 <div class="proj-text-container coming-soon-project">
                     <h3 class="proj-featured">Featured Project</h3>
-                    <h2 class ="proj-title">TITLE HERE</h2>
-                    <p class="proj-caption">TEXT HERE</p>
-                    <p class="proj-stack">TECH STACK HERE</p>
+                    <h2 class ="proj-title">MY NEIGHBORHOOD</h2>
+                    <p class="proj-caption">My Neighborhood is a web application that allows members of a community to quickly and efficiently communicate non-emergency issues to the correct government agency and their fellow community members.</p>
+                    <p class="proj-stack">Python | Django | JavaScript | HTML | CSS | JQuery </p>
                     <div class="proj-button-container">
-                        <a class="proj-button coming-soon-button">View</a>
-                        <a class="proj-button" href="" target="_blank">GitHub</a>
+                        <a class="proj-button href="https://myneighborhood.herokuapp.com/" target="_blank">View</a>
+                        <a class="proj-button" href="https://github.com/pdsilva90/my-neighborhood" target="_blank">GitHub</a>
                     </div>
-                    <div class="coming-soon-modal">
+                    <!-- <div class="coming-soon-modal">
                         <h3 class="coming-soon-title">Coming Soon</h3>
                         <p class="coming-soon-subtitle">The project is nearly done. Check back soon for the finished product!</p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
             
@@ -253,13 +263,13 @@
                             <a href="https://github.com/pdsilva90" target="_blank"><i class="fab fa-github"></i></a>GitHub
                         </p>
                         <p class="connect">
-                            <a href="" download><i class="far fa-file"></i></a>Resume
+                            <a href="Pamela Bueno Resume.pdf" download><i class="far fa-file"></i></a>Resume
                         </p>                    
                     </div>
                 </section>
                 <section class="contact-form-section">
                     <p class="contact-form-title">Send me a message:</p>  
-                    <form action="#" method="post" class="contact-form">
+                    <form action="#" method="post" class="contact-form" id="contact-form">
                         <fieldset class="contact-form-container">
                             <div class="form-row row-1">
                                 <input type="text" name="firstName" id="firstName" required="required" placeholder="First Name">
@@ -298,5 +308,19 @@
         
         <script src="js/main.js"></script>
         <script src="js/index.js"></script>
+        
+        <script type="text/javascript">
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                console.log('hello')
+               event.preventDefault();
+               emailjs.sendForm('service_9pu99wb', 'template_n1gmrti', this)
+                  .then(function(response) {
+                     console.log('SUCCESS!', response.status, response.text);
+                  }, function(error) {
+                     console.log('FAILED...', error);
+                  });
+                return false;
+            });
+         </script>
     </body>
 </html>
