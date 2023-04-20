@@ -19,6 +19,8 @@ body {
 .lottie {
     justify-content: center !important;
     align-items: center !important;
+    width: 400px !important;
+    height: 400px !important;
 }
 
 /* .hero:before {
